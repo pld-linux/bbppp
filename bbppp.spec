@@ -17,16 +17,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandir		%{_prefix}/man
 
 %description
-bbppp allows you to connect and disconnect (with user supplied scripts)
-with dial-up. It monitors load, ligths blinking leds and counts time of
-connection.
-It is highly integrated with blackbox window manager (can use it's
-theme settings), but can work also with other WM.
+bbppp allows you to connect and disconnect (with user supplied
+scripts) with dial-up. It monitors load, ligths blinking leds and
+counts time of connection. It is highly integrated with blackbox
+window manager (can use it's theme settings), but can work also with
+other WM.
 
 %description -l pl
-bbppp pozawala po³±czyæ i roz³±czyæ siê przez dial-up (u¿ywaj±c skryptów
-u¿ytkownika). Mo¿e monitorowaæ przep³yw danych, zapala mrygaj±ce "diodki"
-i liczy czas po³±czenia.
+bbppp pozawala po³±czyæ i roz³±czyæ siê przez dial-up (u¿ywaj±c
+skryptów u¿ytkownika). Mo¿e monitorowaæ przep³yw danych, zapala
+mrygaj±ce "diodki" i liczy czas po³±czenia.
 
 %prep
 %setup -q
