@@ -1,0 +1,11 @@
+--- bbppp-0.2.3/main.cc.orig	2001-04-28 12:32:24.000000000 +0200
++++ bbppp-0.2.3/main.cc	2004-03-28 17:59:16.152445184 +0200
+@@ -42,7 +42,7 @@
+ 	                      "};
+ 
+ 	fprintf(stdout,"\n%s version %s \n",BBTOOL,BBTOOL_VERSION);
+-	fprintf(stdout,"Usage:
++	fprintf(stdout,"Usage:\n\
+ 	        %s [options]\n",BBTOOL);
+ 	fprintf(stdout, "%s", usageOptions);
+ 	/*
