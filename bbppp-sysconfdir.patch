@@ -1,0 +1,21 @@
+diff -ur bbppp-0.2.2-orig/Makefile.am bbppp-0.2.2/Makefile.am
+--- bbppp-0.2.2-orig/Makefile.am	Sun Nov 12 17:52:53 2000
++++ bbppp-0.2.2/Makefile.am	Wed Jan 23 20:38:35 2002
+@@ -1,6 +1,6 @@
+ CPPFLAGS =	@CPPFLAGS@ @INTERLACE@ @ISDN@\
+-		-DGLOBAL_BB=\"$(datadir)/bbtools/bbppp.bb\" \
+-		-DGLOBAL_NOBB=\"$(datadir)/bbtools/bbppp.nobb\"
++		-DGLOBAL_BB=\"$(sysconfdir)/bbtools/bbppp.bb\" \
++		-DGLOBAL_NOBB=\"$(sysconfdir)/bbtools/bbppp.nobb\"
+ 
+ 
+ SUBDIRS = data
+diff -ur bbppp-0.2.2-orig/data/Makefile.am bbppp-0.2.2/data/Makefile.am
+--- bbppp-0.2.2-orig/data/Makefile.am	Sat May 20 18:40:46 2000
++++ bbppp-0.2.2/data/Makefile.am	Wed Jan 23 20:50:16 2002
+@@ -1,4 +1,4 @@
+-configdir = $(datadir)/bbtools
++configdir = $(sysconfdir)/bbtools
+ 
+ 
+ config_DATA =	bbppp.nobb \
