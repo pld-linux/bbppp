@@ -2,7 +2,7 @@ Summary:	A ppp monitor tool designed for blackbox
 Summary(pl):	Narzêdzie minotoruj±ce ppp zaprojektowane dla blackboksa
 Name:		bbppp
 Version:	0.2.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://bbtools.windsofstorm.net/sources/%{name}-%{version}.tar.gz
@@ -34,7 +34,7 @@ mrygaj±ce "diodki" i liczy czas po³±czenia.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
@@ -45,13 +45,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-gzip -9nf AUTHORS ChangeLog README TODO data/README.*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz data/*.gz
+%doc AUTHORS ChangeLog README TODO data/README.*
 %attr(755,root,root) %{_bindir}/bb*
 %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/bbtools/%{name}.*
