@@ -1,5 +1,5 @@
 Summary:	A ppp monitor tool designed for blackbox
-Summary(pl):	Narzêdzie monitoruj±ce po³aczenia ppp zaprojektowane dla blackboksa
+Summary(pl):	Narzêdzie monitoruj±ce po³±czenia ppp zaprojektowane dla blackboksa
 Name:		bbppp
 Version:	0.2.2
 Release:	3
@@ -13,7 +13,6 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 bbppp allows you to connect and disconnect (with user supplied
 scripts) with dial-up. It monitors load, lights blinking leds and
@@ -22,7 +21,7 @@ window manager (can use it's theme settings), but can also work with
 other WM.
 
 %description -l pl
-bbppp pozawala po³±czyæ i roz³±czyæ siê przez dial-up (u¿ywaj±c
+bbppp pozwala po³±czyæ i roz³±czyæ siê przez dial-up (u¿ywaj±c
 skryptów u¿ytkownika). Mo¿e monitorowaæ przep³yw danych, zapala
 mrugaj±ce "diodki" i liczy czas po³±czenia.
 
