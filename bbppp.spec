@@ -35,8 +35,8 @@ mrygaj±ce "diodki" i liczy czas po³±czenia.
 %build
 rm -f missing
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make} CXX="%{__cc}"
 
