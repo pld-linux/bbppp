@@ -2,7 +2,7 @@ Summary:	A ppp monitor tool designed for blackbox
 Summary(pl):	Narzêdzie monitoruj±ce po³±czenia ppp zaprojektowane dla blackboksa
 Name:		bbppp
 Version:	0.2.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://bbtools.windsofstorm.net/sources/%{name}-%{version}.tar.gz
@@ -14,7 +14,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 # whatever package it would belong to
-Requires:	/etc/bbtools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
