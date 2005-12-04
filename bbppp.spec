@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog README TODO data/README.*
 %attr(755,root,root) %{_bindir}/bb*
 %dir %{_sysconfdir}/bbtools
-%config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/bbtools/%{name}.*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/bbtools/%{name}.*
