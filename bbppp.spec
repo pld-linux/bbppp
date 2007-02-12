@@ -1,5 +1,5 @@
 Summary:	A ppp monitor tool designed for blackbox
-Summary(pl.UTF-8):   Narzędzie monitorujące połączenia ppp zaprojektowane dla blackboksa
+Summary(pl.UTF-8):	Narzędzie monitorujące połączenia ppp zaprojektowane dla blackboksa
 Name:		bbppp
 Version:	0.2.3
 Release:	3
